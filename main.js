@@ -8,13 +8,6 @@ console.log('movies number after 1998: ', movies.filter(function(m) {
   return Number(m.year) > 1998;
 }).reduce(inc, 0));
 
-function map(array, transform) {
-  var mapped = [];
-  for (var i = 0; i < array.length; i++)
-    mapped.push(transform(array[i]));
-  return mapped;
-}
-
 var recentMovies = movies.filter(function(m) {
   return Number(m.year) > 2010;
 });
