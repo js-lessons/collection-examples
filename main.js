@@ -17,7 +17,7 @@ var title = function(m) { return m.title; }
 
 console.log('number of recent movies: ', recentMovies.reduce(inc, 0));
 
-console.log('recent movies: ', map(recentMovies, function(m) { return [year(m), title(m)]}));
+console.log('recent movies: ', recentMovies.map(function(m) { return [year(m), title(m)]}));
 
 var average = function(array) {
   function plus(a, b) { return a + b; }
